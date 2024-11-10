@@ -32,14 +32,24 @@
   padding-top: clamp(7.5rem, 7.0098rem + 2.0915vw, 8.5rem);
 }
 
-.header__title {
+.header__logo {
   text-transform: uppercase;
   padding-block-end: 20px;
   font-family: var(--accent-font, sans-serif);
   font-size: clamp(3.0625rem, 2.5723rem + 2.0915vw, 4.0625rem);
 }
 
-.header__title_prh {
+.link__text {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link__text:focus,
+.link__text:focus-visible {
+  outline: none;
+}
+
+.header__title {
   text-transform: uppercase;
   padding-block-end: 25px;
   font-family: var(--accent-font, sans-serif);
@@ -139,6 +149,7 @@
 
 .content__img {
   inline-size: 100%;
+  block-size: var(--image-size, 100%);
   object-fit: cover;
   object-position: center center;
 }
@@ -146,7 +157,6 @@
 .content__img-watermark {
   position: absolute;
   right: 25px;
-
   top: 25px;
   font-family: var(--accent-font, sans-serif);
   mix-blend-mode: hard-light;
@@ -309,7 +319,7 @@
   pointer-events: none;
 }
 
-dialog[open] {
+.dialog[open] {
   animation: open_dialog 0.3s ease-in-out;
 }
 
@@ -317,7 +327,7 @@ dialog[open] {
   background-color: rgb(0 0 0 / 0.75);
 }
 
-dialog[open]::backdrop {
+.dialog[open]::backdrop {
   animation: open_dialog 0.3s ease-in-out;
 }
 
