@@ -135,7 +135,7 @@
 .content__subtitle {
   padding: 3px 10px;
   font-family: var(--main-font, sans-serif);
-  font-variation-settings: "wght" var(--header-font-weigh, 700);
+  font-variation-settings: "wght" var(--header-font-weight, 700);
   font-size: 18px;
   border-bottom: 2px solid var(--accent-color, #000);
 }
